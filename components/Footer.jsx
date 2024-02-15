@@ -1,4 +1,4 @@
-import { CodeIcon, HeartIcon } from "lucide-react"
+import { CodeIcon, HeartIcon } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,10 +10,10 @@ const Footer = () => {
         <CodeIcon className="h-5 w-5" />
         <span>with</span>
         <HeartIcon className="h-4 w-4 group-hover:text-red-500" />
-        <span>in Denmark</span>
+        <span>in Tushar Upadhyay</span>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
