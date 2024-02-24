@@ -1,15 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss"
 
-const plugin = require("tailwindcss/plugin")
-
-module.exports = {
+const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-  ],
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+	],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -19,11 +18,6 @@ module.exports = {
       },
     },
     extend: {
-      textShadow: {
-        sm: "0 1px 2px var(--tw-shadow-color)",
-        DEFAULT: "0 2px 4px var(--tw-shadow-color)",
-        lg: "1rem 2rem 7rem var(--tw-shadow-color)",
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -66,12 +60,12 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -79,23 +73,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-    corePlugins: {
-      aspectRatio: false,
-    },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require("@tailwindcss/aspect-ratio"),
-    require("tailwind-scrollbar-hide"),
-    plugin(function ({ matchUtilities, theme }: any) {
-      matchUtilities(
-        {
-          "text-shadow": (value: number) => ({
-            textShadow: value,
-          }),
-        },
-        { values: theme("textShadow") }
-      )
-    }),
-  ],
-}
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
+export default config
