@@ -7,11 +7,7 @@ import { v4 as uuid } from "uuid";
 
 import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 
-import NavAccordion from "./nav-accordion";
-import NavMenuDropdown from "./nav-dropdown";
-import Pannel from "./pannel";
-import Typography from "@/components/atoms/typography";
-import ModeToggle from "@/components/molecules/mode-toggle";
+import ModeToggle from "@/components/theme/ModeToggle";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -32,6 +28,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import { IAM } from "@/lib/config";
 import { UserData } from "@/lib/interfaces/user";
+import NavMenuDropdown from "./NavMenuDropdown";
+import SheetSide from "./SheetSide";
+import NavAccordion from "./NavAccordion";
+import Image from "next/image";
+import Typography from "./Typography";
 
 const Header = ({
   userData,
@@ -44,6 +45,7 @@ const Header = ({
 }) => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+
   return (
     <header
       className={cn(
@@ -56,7 +58,7 @@ const Header = ({
         className="flex items-center gap-2"
         onClick={() => setOpen(false)}
       >
-        <Typography variant="large">MKSingh</Typography>
+        <Image src={"/favicon.ico"} alt="logo" width={60} height={60} />
       </Link>
       <div className="ml-auto flex items-center gap-3 xl:hidden">
         <ModeToggle />
@@ -132,19 +134,20 @@ const Header = ({
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <Link
-              className={buttonVariants()}
-              href={`${IAM.baseUrl}/login?callback=${pathname}`}
-            >
-              Log in
-            </Link>
+            // <Link
+            //   className={buttonVariants()}
+            //   // href={`${IAM.baseUrl}/login?callback=${pathname}`}
+            // >
+            //   Log in
+            // </Link>
+            ""
           )}
           <ModeToggle />
         </div>
       </div>
 
       {/* Mobile Navigation Bar */}
-      <Pannel
+      <SheetSide
         onClick={() => setOpen(false)}
         open={open}
         trigger={
@@ -189,7 +192,7 @@ const Header = ({
             )
           )}
         </div>
-      </Pannel>
+      </SheetSide>
     </header>
   );
 };

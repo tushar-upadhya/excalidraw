@@ -3,8 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import ThemeProvider from "@/components/molecules/theme-provider";
-import Header from "@/components/organisms/layout/header";
+import ThemeProvider from "@/components/theme/ThemeProvider";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
