@@ -1,12 +1,11 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = () => {
-  const path = usePathname();
+import { MoveRight } from "lucide-react";
 
+const Hero = () => {
   return (
     <section className="bg-white w-full dark:bg-gray-900">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
@@ -27,24 +26,18 @@ const Hero = () => {
             users to easily sketch diagrams with a hand-drawn feel.
           </p>
 
-          <Link
-            href="#"
-            className="inline-flex items-center text-slate-800 font-semibold  dark:text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300  rounded-lg px-5 py-2.5 text-center dark:focus:ring-primary-900 text-lg"
-          >
-            Get started
-            <svg
-              className="ml-2 -mr-1 w-5 h-5 hover:transition-all "
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          <div className="hover:ml-4 transition-all duration-300 hover:translate-x-2">
+            <Link
+              href="/board"
+              className="inline-flex items-center text-slate-500 font-semibold dark:text-white bg-primary-700 rounded-lg px-5 py-2.5 text-center transition-all duration-200 text-2xl hover:text-slate-800 dark:hover:text-[#FFA447]"
             >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+              Ready
+              <MoveRight
+                size={25}
+                className="ml-1 transition-all duration-300 text-3xl translate-x-2"
               />
-            </svg>
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

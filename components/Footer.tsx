@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   const currentMonth = new Date().toLocaleString("default", { month: "long" });
 
   return (
@@ -15,25 +14,34 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Follow me
               </h2>
-
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
+                <li className="mb-2">
                   <Link
                     href="https://github.com/tushar-upadhya"
                     target="_blank"
-                    className="hover:font-bold transition-all duration-300"
+                    className="hover:font-bold transition-all duration-300 dark:hover:text-[#FFA447]"
                   >
                     Github
                   </Link>
                 </li>
 
-                <li>
+                <li className="mb-2">
                   <Link
                     href="https://www.linkedin.com/in/tushar-upadhyay-54029b135/"
                     target="_blank"
-                    className="hover:font-bold transition-all duration-300"
+                    className="hover:font-bold transition-all duration-300 dark:hover:text-[#FFA447]"
                   >
                     LinkedIn
+                  </Link>
+                </li>
+
+                <li className="mb-2">
+                  <Link
+                    href="https://twitter.com/upadhyay0405"
+                    target="_blank"
+                    className="hover:font-bold transition-all duration-300 dark:hover:text-[#FFA447]"
+                  >
+                    Twitter
                   </Link>
                 </li>
               </ul>
@@ -43,32 +51,17 @@ const Footer = () => {
 
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
-        <div className="sm:flex text-black sm:items-center sm:justify-between">
-          <span className="text-sm  sm:text-center dark:text-gray-400">
-            {currentMonth} - {currentYear} | All Rights Reserved |{" "}
+        <div className="flex justify-center items-center text-black dark:text-gray-400">
+          <span className="text-sm">
+            &#169; Copyright |{" "}
             <Link
               href="https://tusharupadhyay.vercel.app/"
-              className="hover:underline transition-all duration-200"
+              className="font-semibold transition-all text-gray-500 dark:text-gray-400 font-medium duration-300 dark:hover:text-[#FFA447]"
             >
               Tushar Upadhyay
-            </Link>
+            </Link>{" "}
+            | {currentMonth}
           </span>
-          <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <Link
-              href="https://www.linkedin.com/in/tushar-upadhyay-54029b135/"
-              target="_blank"
-              className="hover:text-black text-gray-600 dark:hover:text-white ms-5 hover:font-bold transition-all duration-300"
-            >
-              <TwitterLogoIcon />
-            </Link>
-            <Link
-              href="https://github.com/tushar-upadhya"
-              target="_blank"
-              className="hover:text-black text-gray-600 dark:hover:text-white ms-5 hover:font-bold transition-all duration-300"
-            >
-              <GitHubLogoIcon />
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

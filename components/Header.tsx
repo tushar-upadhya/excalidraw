@@ -1,9 +1,9 @@
 "use client";
+
 import Link from "next/link";
+import Image from "next/image";
 
 import ModeToggle from "@/components/theme/ModeToggle";
-
-import Image from "next/image";
 
 const Header = () => {
   return (
