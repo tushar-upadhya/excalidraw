@@ -1,10 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import {
-  Icon,
-  IconArticleFilledFilled,
-  IconChartBubble,
-  IconHome2,
-} from "@tabler/icons-react";
+import { Icon, IconChartBubble } from "@tabler/icons-react";
 
 type MenuType = {
   href: string;
@@ -20,41 +14,12 @@ export type HeaderMenuType = MenuType & {
 };
 
 const HEADER_MENUS: Array<HeaderMenuType> = [
-  // {
-  //     href: '/',
-  //     text: 'Home',
-  //     icon: IconHome2,
-  //     havePage: true,
-  // },
-  //   {
-  // href: '/board',
-  // text: 'Board',
-  // icon: IconChartBubble,
-  // havePage: true,
-  //   },
-  // {
-  //     href: '/', // Don't leave href as blank string otherwise accordion will not work.
-  //     text: 'Blogs',
-  //     icon: IconArticleFilledFilled,
-  //     havePage: false,
-  //     children: [
-  //         {
-  //             href: '/blogs/web-development',
-  //             text: 'Web Development',
-  //             havePage: true,
-  //         },
-  //         {
-  //             href: '/blogs/desktop-application',
-  //             text: 'Desktop Application',
-  //             havePage: true,
-  //         },
-  //         {
-  //             href: '/blogs/identity-and-access',
-  //             text: 'Identity & Access',
-  //             havePage: true,
-  //         },
-  //     ],
-  // },
+  {
+    href: "/board",
+    text: "Board",
+    icon: IconChartBubble,
+    havePage: true,
+  },
 ];
 
 export const headerMenu = (orgId?: string) => {
