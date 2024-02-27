@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-
 import { MoveRight } from "lucide-react";
 
 const Hero = () => {
@@ -18,7 +15,7 @@ const Hero = () => {
         />
         <div className="mt-4 md:mt-0">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            Let's create more tools and ideas that bring us together.
+            {"Let's"} create more tools and ideas that bring us together.
           </h2>
 
           <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
