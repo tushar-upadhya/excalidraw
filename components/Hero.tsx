@@ -7,7 +7,7 @@ import { MoveRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-white w-full dark:bg-gray-900">
+    <section className="bg-white w-full dark:bg-black">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <Image
           className="w-full"

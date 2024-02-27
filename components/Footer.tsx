@@ -6,7 +6,7 @@ const Footer = () => {
   const currentMonth = new Date().toLocaleString("default", { month: "long" });
 
   return (
-    <footer className="bg-white w-full dark:bg-gray-900">
+    <footer className="bg-white w-full dark:bg-black">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -52,11 +52,11 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
         <div className="flex justify-center items-center text-black dark:text-gray-400">
-          <span className="text-sm">
+          <span className="text-sm gap-4">
             &#169; Copyright |{" "}
             <Link
               href="https://tusharupadhyay.vercel.app/"
-              className="font-semibold transition-all text-gray-500 dark:text-gray-400 font-medium duration-300 dark:hover:text-[#FFA447]"
+              className="hover:font-bold transition-all text-gray-500 dark:text-gray-400  duration-300 dark:hover:text-[#FFA447] "
             >
               Tushar Upadhyay
             </Link>{" "}
