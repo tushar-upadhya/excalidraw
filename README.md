@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center"><h1> logic board </h1> </div>
 
-## Getting Started
+# About
+this application allows users to import images from their local desktop, switch to a dark mode for a comfortable viewing experience, use a laser pointer for presentations, and save their canvas as an image.
 
-First, run the development server:
+## Website is Live : [https://excalidraw-tusharupadhyay.vercel.app/](https://excalidraw-tusharupadhyay.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Screenshots
+![Screenshot 2024-02-28 225704](https://github.com/tushar-upadhya/excalidraw/assets/113006456/f479bed7-1324-4553-a5b0-90426f13a03d)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Screenshot 2024-02-28 230111](https://github.com/tushar-upadhya/excalidraw/assets/113006456/dc3dbc5e-7e3b-4090-a152-fc6161309bd5)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Screenshot 2024-02-28 230116](https://github.com/tushar-upadhya/excalidraw/assets/113006456/6076d473-2a10-4c17-9edb-06e1a9dbda1b)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Tech Stack
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?logo=html5&logoColor=white&style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white&style=for-the-badge)
+![NPM ](https://img.shields.io/badge/NPM-%23000000.svg?logo=npm&logoColor=white&style=for-the-badge)
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?logo=nestjs&logoColor=white&style=for-the-badge)
+![Next JS ](https://img.shields.io/badge/Next-black?logo=next.js&logoColor=white&style=for-the-badge)
+![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB&style=for-the-badge)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?logo=tailwind-css&logoColor=white&style=for-the-badge)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?logo=git&logoColor=white&style=for-the-badge)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?logo=github&logoColor=white&style=for-the-badge)
